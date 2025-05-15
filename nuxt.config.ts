@@ -21,6 +21,29 @@ export default defineNuxtConfig({
 
     }
   },
+  routeRules: {
+    /* ─────────────── top-level pages ─────────────── */
+    '/':                 { prerender: true },
+    '/about':            { prerender: true },
+
+    /* ─────────────── resources ─────────────── */
+    '/resources':        { prerender: true },
+
+    /* ─────────────── articles ─────────────── */
+    '/articles':         { prerender: true },   // /pages/articles/index.vue
+    '/articles/**':      { prerender: true },   // /pages/articles/[id].vue
+
+    /* ─────────────── authors ─────────────── */
+    '/authors/**':       { prerender: true },   // /pages/authors/[author].vue
+
+    /* ─────────────── events ─────────────── */
+    '/events':           { prerender: true },   // /pages/events/index.vue
+    '/events/**':        { prerender: true },   // /pages/events/[id].vue
+
+    /* ─────────────── news ─────────────── */
+    '/news':             { prerender: true },   // /pages/news/index.vue
+    '/news/**':          { prerender: true },   // /pages/news/[id].vue
+  },
   vite: {
     define: {
       global: 'globalThis'
