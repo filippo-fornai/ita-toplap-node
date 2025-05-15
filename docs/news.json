@@ -1,0 +1,43 @@
+[
+    {
+        "id": 0,
+        "title": "News 1",
+        "description": "Description for News 1",
+        "date": "2023-10-01",
+        "page": true,
+        "author": "Alice"
+    },
+    {
+        "id": 1,
+        "title": "News 2",
+        "description": "Description for News 2",
+        "date": "2023-10-02",
+        "page": false,
+        "author": "John"
+    },
+    {
+        "id": 2,
+        "title": "News 3",
+        "description": "Description for News 3Description for News 3Description for News 3Description for News 3Description for News 3Description for News 3Description for News 3Description for News 3Description for News 3",
+        "date": "2025-05-02",
+        "image": "default",
+        "page": true,
+        "author": "Robert"
+    },
+    {
+        "id": 3,
+        "title": "News 4",
+        "description": "Description for News 4",
+        "date": "2025-04-01",
+        "page": false,
+        "author": "Alice"
+    },
+    {
+        "id": 4,
+        "title": "News 5",
+        "description": "Description for News 5",
+        "date": "2025-03-01",
+        "page": true,
+        "author": "John"
+    }
+]

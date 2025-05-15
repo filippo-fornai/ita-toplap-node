@@ -1,0 +1,1 @@
+import{_ as o}from"./EWjjDvQn.js";import{_ as t,H as n,v as r}from"./D2HCay29.js";import"./DXPJxXHF.js";import"./B2XwIevP.js";const _={};function c(a,s){const e=o;return r(),n(e,{category:"events",authorLabel:"Organized by:"})}const d=t(_,[["render",c]]);export{d as default};
