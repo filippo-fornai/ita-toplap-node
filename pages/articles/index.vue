@@ -8,7 +8,8 @@
 
             <UtilitySortFilter @updateFilter="filterData" @updateSort="sortData">
                 
-                <UtilitySort :initialOrder></UtilitySort>
+                <!-- momentarily disabled, static page can fetch data order in another way  -->
+                <!-- <UtilitySort :initialOrder></UtilitySort> -->
                 
                 <h2 style="text-align: center;background: black; z-index: 1;">Filters:</h2>
                 <div id="filters-container">

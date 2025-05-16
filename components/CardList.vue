@@ -24,7 +24,6 @@ const props = defineProps({
 // )
 const url = computed(()=>{
     return `/api/dated/${props.file}?order=${props.order}&beforeToday=${props.beforeToday}`
-
 })
 const {data,status,error} = await useFetch(url,{default: () => []})
 const shownCards = computed(() => {

@@ -1,1 +1,0 @@
-import{_ as e}from"./e-KcZPKQ.js";import{_ as t,H as _,v as n}from"./D2QMpIAr.js";import"./DXPJxXHF.js";import"./1zgirwCW.js";const c={};function r(s,a){const o=e;return n(),_(o,{category:"news"})}const d=t(c,[["render",r]]);export{d as default};
