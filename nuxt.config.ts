@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   //needed for SGA/SPA for deployment on github pages
   nitro:{
     preset: 'static',
-    
+
     prerender:{
       crawlLinks: true,
       
@@ -20,6 +20,14 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
   modules: ['@nuxt/eslint', '@nuxt/icon'],
+
+  // Needed to bundle used icons when prerendering
+  // alternatively use provider and serverBundle
+  icon:{
+    clientBundle: {scan:true},
+
+  },
+
   runtimeConfig: {
     public: {
       // cipher_animation_time: process.env.CIPHER_ANIMATION_TIME,
