@@ -10,12 +10,12 @@ hydra1.canvas.style['z-index'] = '1';
 function showCanvas() {
     hydra1.canvas.style['display'] = 'block';
 }
-function hideCanvas(string) {
+function hideCanvas() {
     hydra1.canvas.style['display'] = 'none';
 }
 export default defineNuxtPlugin(nuxtApp => {
     // Doing something with nuxtApp
-    hideCanvas('plugin')
+    hideCanvas()
     nuxtApp.provide('hydra1', hydra1)
     nuxtApp.provide('showCanvas', showCanvas)
   })

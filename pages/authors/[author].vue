@@ -24,9 +24,9 @@
 <script setup>
 const author = useRoute().params.author
 
-const { $hydra1,$showCanvas } = useNuxtApp()
 const {data:card} = (await useFetch(`/api/authors/${author}`))
 
+const { $hydra1,$showCanvas } = useNuxtApp()
 
 onMounted(async () => {
 
