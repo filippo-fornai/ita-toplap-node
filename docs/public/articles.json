@@ -1,0 +1,38 @@
+[
+    {
+        "id": 0,
+        "title": "Introduction to Live Coding",
+        "date": "2023-10-01",
+        "description": "Learn about the basics and creative potential of live coding in music and art.",
+        "image": "default",
+        "tags": [
+            "renardo",
+            "music"
+        ],
+        "author": "John"
+    },
+    {
+        "id": 1,
+        "title": "Performing Music with Live Coding",
+        "date": "2023-09-15",
+        "description": "A guide to creating and performing music in real-time using live coding techniques.",
+        "image": "default",
+        "tags": [
+            "renardo",
+            "music"
+        ],
+        "author": "Alice"
+    },
+    {
+        "id": 2,
+        "title": "Live Coding Events and Community",
+        "date": "2023-08-20",
+        "description": "Explore global events and the vibrant community centered around live coding.",
+        "image": "default",
+        "tags": [
+            "renardo",
+            "music"
+        ],
+        "author": "Robert"
+    }
+]
