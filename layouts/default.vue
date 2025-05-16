@@ -27,6 +27,8 @@
 header {
     position: sticky;
     top: 0;
+    height: 4vh;
+
 
     background-color: rgba(0, 0, 0, 0.9);
     color: white;
@@ -50,7 +52,6 @@ nav div {
 
 
 nav div a {
-    height: 4vh;
 
     position: relative;
     padding: 10px;

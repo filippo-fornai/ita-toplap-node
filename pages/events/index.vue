@@ -78,7 +78,7 @@ onMounted(() => {
 #sort-filter-cardlist-container {
     width: 100%;
 
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     /* border: 2px solid white; */
 
     display: flex;
@@ -99,17 +99,17 @@ onMounted(() => {
 
     display: flex;
     flex-direction: column;
+    align-items: center;
 
     /* firefox */
     scrollbar-width: thin;
     scrollbar-color: #888 #1e1e1e;
 }
 #filters-container {
+    width: 90%;
     overflow-y: auto;
     overflow-x: hidden;
     flex: 1;
-    padding: 0 10px 0 10px;
-    margin: 0 0 0 0;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -134,5 +134,6 @@ onMounted(() => {
 
 #cardlist-container {
     flex:4;
+    
 }
 </style>

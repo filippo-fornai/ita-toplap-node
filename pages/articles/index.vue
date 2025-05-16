@@ -76,19 +76,7 @@ onMounted(() => {
     z-index: 0;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1));
 }
-#build-link{
-    padding:5px 0;
-    margin: 10px;
-    position:relative;
-    width: 90%;
-    color: white;
-    text-decoration: none;
-    text-align: center;
-    font-weight: bold;
-    border: 1px solid white;
-    background: linear-gradient(to right,white,black 10%,black 90%,white);
-    background-size: 100%;
-}
+
 
 #sort-filter-cardlist-container {
     width: 100%;
@@ -114,12 +102,27 @@ onMounted(() => {
 
     display: flex;
     flex-direction: column;
+    align-items: center;
 
     /* firefox */
     scrollbar-width: thin;
     scrollbar-color: #888 #1e1e1e;
 }
+#build-link{
+    padding:5px 0;
+    margin: 20px 0 0 0;
+    position:relative;
+    width: 90%;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid white;
+    background: linear-gradient(to right,white,black 10%,black 90%,white);
+    background-size: 100%;
+}
 #filters-container {
+    width: 90%;
     overflow-y: auto;
     overflow-x: hidden;
     flex: 1;
