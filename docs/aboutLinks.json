@@ -1,0 +1,32 @@
+[
+    {
+        "name": "GitHub",
+        "url": "",
+        "icon": "github"
+    },
+    {
+        "name": "Telegram",
+        "url": "https://t.me/livecodingita",
+        "icon": "telegram"
+    },
+    {
+        "name": "WhatsApp",
+        "url": "",
+        "icon": "whatsapp"
+    },
+    {
+        "name": "Facebook",
+        "url": "",
+        "icon": "facebook"
+    },
+    {
+        "name": "Instagram",
+        "url": "",
+        "icon": "instagram"
+    },
+    {
+        "name": "Discord",
+        "url": "",
+        "icon": "discord"
+    }
+]
