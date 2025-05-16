@@ -2,7 +2,7 @@
     <div class="summary-card card-normal" ref="summaryCardTag">
         <router-link class="supp" v-if="pageLinked" :to="link">
             <div v-if="props.card.image && showImage" id="sx">
-                <img class="summary-card-img" :src="`/images/${card.image}.png`" alt="Image" />
+                <img class="summary-card-img" :src="`${useRuntimeConfig().app.baseURL}images/${card.image}.png`" alt="Image" />
             </div>
             <div id="dx">
                 <h3 class="summary-card-h3" ref="titleTag">{{ title }}</h3>
@@ -11,7 +11,7 @@
         </router-link>
         <div v-else class="supp-2">
             <div v-if="props.card.image && showImage" id="sx">
-                <img class="summary-card-img" :src="`/images/${card.image}.png`" alt="Image" />
+                <img class="summary-card-img" :src="`${useRuntimeConfig().app.baseURL}images/${card.image}.png`" alt="Image" />
             </div>
             <h3 class="summary-card-h3" ref="titleTag">{{ title }}</h3>
             <p class="summary-card-p" ref="descriptionTag">{{ description }}</p>

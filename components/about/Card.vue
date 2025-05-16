@@ -1,6 +1,7 @@
 <template lang="html">
     <div class="card">
-        <img :src="contributor.image" :alt="contributor.name" />
+        <!-- sistemare -->
+        <!-- <img :src="" :alt="contributor.name" /> -->
         <div class="info">
             <h3>{{ contributor.name }}</h3>
             <p>{{ contributor.phrase }}</p>

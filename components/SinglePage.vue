@@ -9,7 +9,7 @@
                 {{ authorLabel }}
                 <router-link v-if="card" :to=" { name: `authors-author`, params: { 'author': card.author } }">
                     <div id="author-image">
-                        <img :src="`/images/authors/${authorCard.image}`" alt="">
+                        <img :src="`${useRuntimeConfig().app.baseURL}images/authors/${authorCard.image}`" alt="">
                     </div>
                     <div id="author-name">{{ card.author }}</div>
                 </router-link>
@@ -19,7 +19,7 @@
         </div>
         <div id="content">
             <div v-if="'image' in card" id="cover-container">
-                <img id="cover" :src="`/images/${card.image}.png`" alt="">
+                <img id="cover" :src="`${useRuntimeConfig().app.baseURL}images/${card.image}.png`" alt="">
             </div>
             <h1 ref="title">{{ card.title }}</h1>
             <div id="markdown" v-html="sanitizedMarkdown"></div>

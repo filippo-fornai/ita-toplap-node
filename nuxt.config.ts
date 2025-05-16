@@ -5,6 +5,11 @@ export default defineNuxtConfig({
   //needed for SGA/SPA for deployment on github pages
   nitro:{
     preset: 'static',
+    
+    prerender:{
+      crawlLinks: true,
+      
+    }
   },
   
   app:{
@@ -21,29 +26,32 @@ export default defineNuxtConfig({
 
     }
   },
-  routeRules: {
-    /* ─────────────── top-level pages ─────────────── */
-    '/':                 { prerender: true },
-    '/about':            { prerender: true },
 
-    /* ─────────────── resources ─────────────── */
-    '/resources':        { prerender: true },
 
-    /* ─────────────── articles ─────────────── */
-    '/articles':         { prerender: true },   // /pages/articles/index.vue
-    '/articles/**':      { prerender: true },   // /pages/articles/[id].vue
+  
+  // routeRules: {
+  //   /* ─────────────── top-level pages ─────────────── */
+  //   '/':                 { prerender: true },
+  //   '/about':            { prerender: true },
 
-    /* ─────────────── authors ─────────────── */
-    '/authors/**':       { prerender: true },   // /pages/authors/[author].vue
+  //   /* ─────────────── resources ─────────────── */
+  //   '/resources':        { prerender: true },
 
-    /* ─────────────── events ─────────────── */
-    '/events':           { prerender: true },   // /pages/events/index.vue
-    '/events/**':        { prerender: true },   // /pages/events/[id].vue
+  //   /* ─────────────── articles ─────────────── */
+  //   '/articles':         { prerender: true },   // /pages/articles/index.vue
+  //   '/articles/**':      { prerender: true },   // /pages/articles/[id].vue
 
-    /* ─────────────── news ─────────────── */
-    '/news':             { prerender: true },   // /pages/news/index.vue
-    '/news/**':          { prerender: true },   // /pages/news/[id].vue
-  },
+  //   /* ─────────────── authors ─────────────── */
+  //   '/authors/**':       { prerender: true },   // /pages/authors/[author].vue
+
+  //   /* ─────────────── events ─────────────── */
+  //   '/events':           { prerender: true },   // /pages/events/index.vue
+  //   '/events/**':        { prerender: true },   // /pages/events/[id].vue
+
+  //   /* ─────────────── news ─────────────── */
+  //   '/news':             { prerender: true },   // /pages/news/index.vue
+  //   '/news/**':          { prerender: true },   // /pages/news/[id].vue
+  // },
   vite: {
     define: {
       global: 'globalThis'

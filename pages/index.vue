@@ -15,7 +15,7 @@
                         <div id="toplap-icon-overlay-1">
                         </div>
                         <div id="toplap-icon">
-                            <img src="/toplap.svg" alt="">
+                            <img :src="`${useRuntimeConfig().app.baseURL}toplap.svg`" alt="">
                         </div>
                     </div>
                 </div>

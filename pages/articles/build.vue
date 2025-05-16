@@ -114,7 +114,7 @@ const divHydra = useTemplateRef('div-hydra')
 const { $hydra1,$showCanvas } = useNuxtApp()
 
 
-articleSrc.value = '/images/default.png'
+articleSrc.value = `${useRuntimeConfig().app.baseURL}images/default.png`
 // onMounted(async ()=>{
 //     let response = await fetch(articleSrc.value);
 //     let blob = await response.blob();

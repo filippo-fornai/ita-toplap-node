@@ -18,7 +18,7 @@
 <script setup>
 const props = defineProps(['card','category'])
 
-const src = ref(`/images/${props.card.image}.png`)
+const src = ref(`${useRuntimeConfig().app.baseURL}images/${props.card.image}.png`)
 const visible = ref(true)
 
 const cardContainer = useTemplateRef('cardContainer')

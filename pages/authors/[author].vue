@@ -8,7 +8,7 @@
             <div id="sx">
                 <div id="tag">
                     <div id="image">
-                        <img :src="`/images/authors/${card.image}`" alt="">
+                        <img :src="`${useRuntimeConfig().app.baseURL}images/authors/${card.image}`" alt="">
                     </div>
                     <h1 id="tag-name">{{card.name}}</h1>
                 </div>

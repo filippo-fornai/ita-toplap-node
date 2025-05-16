@@ -32,7 +32,7 @@ if (diff < 7) {
 
 onMounted(()=>{
     if ("image" in props.card) {
-        src.value = `/images/${props.card.image}.png`
+        src.value = `${useRuntimeConfig().app.baseURL}images/${props.card.image}.png`
 
         newsCardInfoTag.value.style['border-top'] = '1px solid white'
         newsCardInfoTag.value.style['border-radius'] = '0 0 10px 10px'
