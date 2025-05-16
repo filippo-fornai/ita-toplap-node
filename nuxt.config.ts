@@ -10,13 +10,13 @@ export default defineNuxtConfig({
 
     prerender:{
       crawlLinks: true,
-      
     }
   },
   
   app:{
     // baseURL: `${process.env.NUXT_APP_BASE_URL}` || '/',
     baseURL: process.env.NODE_ENV === 'production' ? `/${process.env.REPO_NAME}/` : '/',
+    // baseURL: '/',
   },
   
 
@@ -28,7 +28,6 @@ export default defineNuxtConfig({
   // alternatively use provider and serverBundle
   icon:{
     clientBundle: {scan:true},
-
   },
 
   runtimeConfig: {

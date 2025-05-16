@@ -1,1 +1,0 @@
-import{_ as s,t,x as o,v as r}from"./DJW1cO_3.js";const n={};function a(p,e,c,i,d,f){return r(),t("div",null,e[0]||(e[0]=[o("p",{style:{"font-size":"3rem"}},"work in progress",-1)]))}const _=s(n,[["render",a]]);export{_ as default};
