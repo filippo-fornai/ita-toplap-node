@@ -15,8 +15,8 @@ export default defineNuxtConfig({
   },
   
   app:{
-    baseURL: `${process.env.NUXT_APP_BASE_URL}` || '/',
-    // baseURL: process.env.NODE_ENV === 'production' ? `/${process.env.REPO_NAME}/` : '/',
+    // baseURL: `${process.env.NUXT_APP_BASE_URL}` || '/',
+    baseURL: process.env.NODE_ENV === 'production' ? `/${process.env.REPO_NAME}/` : '/',
   },
   
 
