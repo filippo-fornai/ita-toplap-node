@@ -49,11 +49,6 @@ const card = computed(() => {
     return cardData.value[id]
 })
 
-watch(card, (newValue) => {
-    if (newValue.image) {
-        title.value.style.setProperty('border-top', '1px solid transparent')
-    }
-})
 
 const authorCard = computed(() => {
     return authorCardData.value[card.value.author]
@@ -63,8 +58,14 @@ const authorCard = computed(() => {
 const sanitizedMarkdown = ref('')
 
 onMounted(() => {
+    if (card.value.image) {
+        console.log(card.image)
+        title.value.style.setProperty('border-right', '1px solid grey')
+        title.value.style.setProperty('border-left', '1px solid grey')
+        
+    }
     // NOTE: Not possible to use computed(), DOMpurify not working with SSR
-    sanitizedMarkdown.value = DOMpurify.sanitize(marked(markdown.value))  
+    sanitizedMarkdown.value = DOMpurify.sanitize(marked(markdown.value))
     
     // Append the Hydra canvas to the div with id "myCanvas"
     $showCanvas()
@@ -232,9 +233,8 @@ onMounted(() => {
     }
 
     h1{
-        border-left:1px solid grey;
         border-bottom:1px solid grey;
-        border-right:1px solid grey;
+
         box-sizing: border-box;
         font-size: 2rem;
         margin: 0;
