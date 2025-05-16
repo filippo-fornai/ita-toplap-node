@@ -6,7 +6,7 @@ export default defineNuxtConfig({
   nitro:{
     // preset: 'static',
     // needed for .nojekyll rule (github jekyll skips _folders in paths)
-    preset: 'github-pages',
+    preset: 'static',
 
     prerender:{
       crawlLinks: true,
