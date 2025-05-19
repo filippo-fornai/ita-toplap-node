@@ -1,4 +1,7 @@
 ### (Discontinued)
+Development moved to:
+https://gitlab.com/toplapitalia/toplapitalia.gitlab.io
+
 # Toplap Italia Website Base
 
 This repository contains the base project for the upcoming **Toplap Italia** website.  
