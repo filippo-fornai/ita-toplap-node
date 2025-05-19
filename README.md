@@ -1,4 +1,5 @@
-# Toplap Italia Website (Nuxt Base)
+### (Discontinued)
+# Toplap Italia Website Base
 
 This repository contains the base project for the upcoming **Toplap Italia** website.  
 It has been built using [Nuxt](https://nuxt.com), a powerful Vue framework ideal for building modern, performant web applications.
@@ -8,7 +9,7 @@ It has been built using [Nuxt](https://nuxt.com), a powerful Vue framework ideal
 ## 🚧 Project Purpose
 
 This is the foundational codebase that will support future updates and the full development of the Toplap Italia website.  
-It includes the complete structure for both local development and static deployment.
+It includes a basic structure for both local development and static deployment.
 
 ---
 
