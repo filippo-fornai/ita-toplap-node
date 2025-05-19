@@ -1,75 +1,33 @@
-# Nuxt Minimal Starter
+# Toplap Italia Website (Nuxt Base)
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+This repository contains the base project for the upcoming **Toplap Italia** website.  
+It has been built using [Nuxt](https://nuxt.com), a powerful Vue framework ideal for building modern, performant web applications.
 
-## Setup
+---
 
-Make sure to install dependencies:
+## 🚧 Project Purpose
+
+This is the foundational codebase that will support future updates and the full development of the Toplap Italia website.  
+It includes the complete structure for both local development and static deployment.
+
+---
+
+## 🧩 Technologies Used
+
+Alongside Nuxt, the project makes use of several key libraries:
+
+- 🎛 **[Hydra Video Synth](https://github.com/ojack/hydra)** – for live-coded visuals and generative video synthesis
+- 📝 **[Ace Editor](https://ace.c9.io/)** – embedded code editor for interactive editing experiences
+- 📖 **[Marked](https://github.com/markedjs/marked)** – Markdown parser for rendering article content
+- 🛡 **[DOMPurify](https://github.com/cure53/DOMPurify)** – to safely sanitize user-generated HTML content
+
+---
+
+## 🛠 Development
+
+The project is set up with standard Nuxt practices.  
+To preview the site during development, run the following:
 
 ```bash
-# npm
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
 npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
